@@ -19,7 +19,7 @@ page 123456701 "Seminar"
                             CurrPage.Update;
                     end;
                 }
-                field(Name;Name)
+                field(Name; Name)
                 {
 
                 }

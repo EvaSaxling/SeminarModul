@@ -87,11 +87,16 @@ table 123456701 "Seminar"
             Editable = false;
             TableRelation = "No. Series";
         }
+    }
+    keys
     {
         key(PK; "No.")
-        Key(SK; "Search Name")
         {
             Clustered = true;
+        }
+        Key(SK; "Search Name")
+        {
+
         }
     }
     var

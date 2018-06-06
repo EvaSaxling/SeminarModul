@@ -1,0 +1,26 @@
+{
+  "id": "69ed2db4-1df6-46bb-8427-39c51fa58a21",
+  "name": "seminarModul",
+  "publisher": "ESA",
+  "brief": "",
+  "description": "",
+  "version": "1.0.0.0",
+  "compatibilityId": "1.0.0.0",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "capabilities": [],
+  "dependencies": [],
+  "screenshots": [],
+  "features": "TranslationFile",
+  "target": "Internal",
+  "showMyCode": true,
+  "platform": "11.0.0.0",
+  "application": "11.0.0.0",
+  "idRange": {
+    "from": 123456700,
+    "to": 123456799
+  }
+}

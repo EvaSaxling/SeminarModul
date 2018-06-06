@@ -32,7 +32,7 @@ pageextension 123456700 CSD_ResourceCardExt extends "Resource Card"
     }
     trigger OnAfterGetRecord();
     begin
-        ShowMaxField = (Type = Type::Machine);
+        ShowMaxField := (Type = Type::Machine);
     end;
 
     var

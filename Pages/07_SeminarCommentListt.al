@@ -10,19 +10,19 @@ page 123456707 "Seminar Comment List"
         {
             repeater(Group)
             {
-                field(Date;Date)
+                field(Date; Date)
                 {
-                    
+
                 }
-                field(Code;Code)
+                field(Code; Code)
                 {
                     Visible = false;
                 }
-                field(Comment;Comment)
+                field(Comment; Comment)
                 {
-                    
+
                 }
             }
         }
-    } 
+    }
 }

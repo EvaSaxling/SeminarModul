@@ -142,7 +142,7 @@ table 123456701 "Seminar"
             SeminarSetup.TestField("Seminar Nos.");
             if NoSeriesMgt.SelectSeries(SeminarSetup."Seminar Nos.", xRec."No. Series", "No. Series") then begin
                 NoSeriesMgt.SetSeries("No.");
-                Rec := Seminar; 
+                Rec := Seminar;
                 exit(true);
             end;
         end;

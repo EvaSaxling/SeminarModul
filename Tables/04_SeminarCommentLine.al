@@ -17,8 +17,10 @@ table 123456704 "Seminar Comment Line"
         }
         field(30; "No."; Code[20])
         {
-            Caption = 'Document Line No.';
-            TableRelation = if("Table Name" = const (Seminar)) "Seminar";
+            Caption = 'No.';
+            TableRelation = if("Table Name" = const (Seminar)) "Seminar"
+            else if("Table Name" = Const ("Seminar Registration Header")) "Seminar Registration Header"
+            else if("Table Name" = Const ("Posted Seminar Reg. Header")) "Posted Seminar Reg. Header";
         }
         field(40; "Line No."; Integer)
         {
@@ -39,7 +41,7 @@ table 123456704 "Seminar Comment Line"
     }
     keys
     {
-        key(PK; "Table Name","Document Line No.","No.","Line No.")
+        key(PK; "Table Name", "Document Line No.", "No.", "Line No.")
         {
             Clustered = true;
         }

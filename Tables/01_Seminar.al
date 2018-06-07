@@ -1,6 +1,8 @@
 table 123456701 "Seminar"
 {
-    DataClassification = ToBeClassified;
+    Caption = 'Semainar';
+    LookupPageId = "Seminar List";
+    DrillDownPageId = "Seminar List";
 
     fields
     {

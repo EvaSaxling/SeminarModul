@@ -83,16 +83,45 @@ page 123456701 "Seminar"
         {
             group("&Seminar")
             {
+                action("Ledger Entries")
+                {
+                    RunObject = page "Seminar Ledger Entries";
+                    RunPageLink = "Seminar No." = field ("No.");
+                    Promoted = true;
+                    PromotedCategory = Process;
+                    ShortcutKey = "Ctrl+F7";
+                    Image = WarrantyLedger;
+                }
+                action("&Registrations")
+                {
+                    RunObject = page "Seminar Registration List";
+                    RunPageLink = "Seminar No." = field ("No.");
+                    Image = Timesheet;
+                    Promoted = true;
+                    PromotedCategory = Process;
+                }
                 action("Co&mment")
                 {
-                    //RunObject=page "Seminar Comment Sheet";
-                    //RunPageLink = "Table Name"= const(Seminar), 
-                    // "No."=field("No."); 
+                    RunObject = page "Seminar Comment Sheet";
+                    RunPageLink = "Table Name" = const (Seminar),
+                     "No." = field ("No.");
                     Image = Comment;
                     Promoted = true;
                     PromotedIsBig = true;
                     PromotedOnly = true;
                 }
+            }
+        }
+        area(Processing)
+        {
+            action("Seminar Registration")
+            {
+                RunObject = page "Seminar Registration";
+                RunPageLink = "Seminar No." = field("No.");
+                RunPageMode = Create;
+                Image = NewTimesheet;
+                Promoted = true;
+                PromotedCategory = New;
             }
         }
     }

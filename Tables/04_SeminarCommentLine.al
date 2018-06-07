@@ -19,8 +19,8 @@ table 123456704 "Seminar Comment Line"
         {
             Caption = 'No.';
             TableRelation = if("Table Name" = const (Seminar)) "Seminar"
-            else if("Table Name" = Const ("Seminar Registration Header")) "Seminar Registration Header"
-            else if("Table Name" = Const ("Posted Seminar Reg. Header")) "Posted Seminar Reg. Header";
+            else if("Table Name" = Const ("Seminar Registration Header")) "Seminar Registration Header";
+            //else if("Table Name" = Const ("Posted Seminar Reg. Header")) "Posted Seminar Reg. Header";
         }
         field(40; "Line No."; Integer)
         {

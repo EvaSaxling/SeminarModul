@@ -7,7 +7,7 @@ codeunit 123456702 SeminarRegPrinted
     trigger OnRun();
     begin
         Find;
-        //"No. Printed" += 1; 
+        "No. Printed" += 1; 
         Modify;
         Commit;
     end;

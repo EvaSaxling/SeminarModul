@@ -264,8 +264,8 @@ table 123456710 "Seminar Registration Header"
                     SeminarRegHeader := Rec;
                     SeminarSetup.Get;
                     SeminarSetup.TestField("Seminar Registration Nos.");
-                    SeminarSetup.TestField("Posted Seminar Reg. Nos");
-                    if NoSeriesMgt.LookupSeries(SeminarSetup."Posted Seminar Reg. Nos", "Posting No. Series")
+                    SeminarSetup.TestField("Posted Seminar Reg. Nos.");
+                    if NoSeriesMgt.LookupSeries(SeminarSetup."Posted Seminar Reg. Nos.", "Posting No. Series")
                     then begin
                         VALIDATE("Posting No. Series");
                     end;
@@ -278,8 +278,8 @@ table 123456710 "Seminar Registration Header"
                 if "Posting No. Series" <> '' then begin
                     SeminarSetup.Get;
                     SeminarSetup.TestField("Seminar Registration Nos.");
-                    SeminarSetup.TestField("Posted Seminar Reg. Nos");
-                    NoSeriesMgt.TestSeries(SeminarSetup."Posted Seminar Reg. Nos", "Posting No. Series");
+                    SeminarSetup.TestField("Posted Seminar Reg. Nos.");
+                    NoSeriesMgt.TestSeries(SeminarSetup."Posted Seminar Reg. Nos.", "Posting No. Series");
                 end;
                 TestField("Posting No.", '');
             end;
@@ -363,7 +363,7 @@ table 123456710 "Seminar Registration Header"
             "Posting Date" := WorkDate;
         "Document Date" := WorkDate;
         SeminarSetup.Get;
-        NoSeriesMgt.SetDefaultSeries("Posting No. Series", SeminarSetup."Posted Seminar Reg. Nos");
+        NoSeriesMgt.SetDefaultSeries("Posting No. Series", SeminarSetup."Posted Seminar Reg. Nos.");
     end;
 
     procedure AssistEdit(OldSeminarRegHeader: Record "Seminar Registration Header"): Boolean;
